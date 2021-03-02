@@ -30,13 +30,13 @@ function App() {
     setWeather(res.data);
   }
 
-  if (location == false) {
+  if (location === false) {
     return (
       <>
         <AllowLocal />
       </>
     )
-  } else if (weather == false) {
+  } else if (weather === false) {
     return (
       <>
         <LoadInfos />
